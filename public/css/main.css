@@ -1,0 +1,12 @@
+.button {
+  font: bold 13px Arial;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 5px 10px;
+  border: 1px solid #333333;
+}
+
+.err-text {
+  color: red;
+}

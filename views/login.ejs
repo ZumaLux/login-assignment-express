@@ -1,0 +1,30 @@
+<%- include('includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/login.css" />
+</head>
+
+<body>
+  <div id="absoluteCenteredDiv">
+    <form action="/login" method="post">
+      <div class="box">
+        <h1>Login Form</h1>
+        <input
+          class="username"
+          name="username"
+          type="text"
+          placeholder="Username"
+        />
+        <input
+          class="username"
+          name="password"
+          type="password"
+          placeholder="Password"
+        />
+        <% if (logState==="!success") { %>
+          <p class="err-text"><%=message%></p>
+        <% }%>
+        <button type="submit" class="button">Sign In</button>
+      </div>
+    </form>
+  </div>
+</body>

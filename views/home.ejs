@@ -1,0 +1,11 @@
+<%- include('includes/head.ejs') %>
+
+<h1>Home page</h1>
+
+<% if (!user) { %>
+<a href="/login" class="button">Login</a>
+<% } else { %>
+<p><b>user:</b> <%= user.name %></p>
+<a href="/students" class="button">Students</a>
+<a href="/logout" class="button">Logout</a>
+<% } %>
